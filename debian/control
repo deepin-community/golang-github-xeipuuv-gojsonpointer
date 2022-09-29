@@ -1,0 +1,24 @@
+Source: golang-github-xeipuuv-gojsonpointer
+Section: devel
+Priority: optional
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Dmitry Smirnov <onlyjob@debian.org>,
+           Tim Potter <tpot@hpe.com>,
+Build-Depends: debhelper-compat (= 12),
+               dh-golang,
+               golang-any,
+Standards-Version: 4.5.0
+Homepage: https://github.com/xeipuuv/gojsonpointer
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-xeipuuv-gojsonpointer
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-xeipuuv-gojsonpointer.git
+XS-Go-Import-Path: github.com/xeipuuv/gojsonpointer
+Rules-Requires-Root: no
+Testsuite: autopkgtest-pkg-go
+
+Package: golang-github-xeipuuv-gojsonpointer-dev
+Architecture: all
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Multi-Arch: foreign
+Description: JSON Pointer implementation in Golang
+ An implementation of JSON Pointer in Golang
